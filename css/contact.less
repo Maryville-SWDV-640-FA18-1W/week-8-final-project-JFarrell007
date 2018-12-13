@@ -1,0 +1,70 @@
+@import (reference) "base.less";
+
+.contactcontainer {
+    /* min-height: 200px;*/
+    /*padding-top:400px;*/
+    border-radius: 5px;
+    background-color: @black;
+    padding: 20px;
+    /*width:80%;*/
+    border:2px solid @orange;
+    max-width: 500px;
+    margin:auto;
+    font-family:@fontRal;
+    color:@orange;
+    font-size: large;
+    
+}
+.contactform{
+    /*padding-top:100px;*/
+    min-height:200px;
+    textarea{
+        height:200px;
+    }
+    input[type=submit] {
+        background-color: @orange;
+        color: @white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type=text],textarea{
+        width: 100%;
+      }      
+      input[type=submit]:hover {
+        background-color: red;
+      }
+}
+.contactform1{
+    padding-top:100px;
+    min-height:200px;
+
+    input[type=text],textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        color: @black;
+      }
+      textarea{
+          height:200px;
+      }
+      
+      input[type=submit] {
+        background-color: @orange;
+        color: @white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+    }
