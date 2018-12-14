@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
   <link rel="stylesheet" href="css/theme.css">
   <script type="text/javascript" src="js/jquery-3.3.1-1.min.js"></script>
+  
   <!--<script type="text/javascript" src="js/mustache-1.js"></script>
   <script type="text/javascript" src="js/beverages.js"></script>-->
   <!-- food images from https://www.pexels.com/search/food/ -->
@@ -59,29 +60,47 @@
   <br><br><br><br>
   <div class="contactcontainer">
       <div class="coolFont">Send us a Note</div>
-    <form class="contactform" action="/action_page.php">
+    <!--<form class="contactform" action="/action_page.php">-->
+    <form class="contactform">
       <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" id="name" class="form-control" name="name" placeholder="Your name..">
+      <input type="text" id="name" class="form-control" name="name" placeholder="Your name.." required>
       </div>
       <div class="form-group">
       <label for="email">Email</label>
-      <input type="text" id="email" class="form-control" name="email" placeholder="Your Email..">
+      <input type="email" id="email" class="form-control" name="email" placeholder="Your Email.." required>
       </div>
   
       <div class="form-group">
       <label for="subject">Subject</label>
-      <textarea id="subject" class="form-control" name="subject" placeholder="Leave us a message.."></textarea>
+      <textarea id="subject" class="form-control" name="subject" placeholder="Leave us a message.." required></textarea>
       </div>
   
-      <input type="submit" value="Submit">
+      <!--<input type="submit" value="Submit">-->
+      <!--<button id="submitBtn">Submit</button>-->
     </form>
+
   </div>
+  <button class="submitBtn" id="submitBtn">Submit</button>
+
+  <div id="successModal" class="modalSuccess">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Thank you for your input</p>
+  </div>
+  </div>
+  <div id="warnModal" class="modalWarn">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please enter all information</p>
+  </div>
+  </div>
+  <script type="text/javascript" src="js/contact.js"></script>
 
 <div class="footer">
     <a class="up-arrow" href="contact.html" data-toggle="tooltip" title="TO TOP">
        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a><br><br>
+    </a>
     <p>Dewey and Finn's dog gone good food</p> 
 </div>       
 </body>

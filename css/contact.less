@@ -28,43 +28,71 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
-      }
+    }
+
       input[type=text],textarea{
         width: 100%;
       }      
       input[type=submit]:hover {
         background-color: red;
       }
-}
-.contactform1{
-    padding-top:100px;
-    min-height:200px;
+/*      input:invalid{
+          border: 2px dashed red;
+      }*/
+      input:invalid{
+        border: 2px dashed red;
+          .submitBtn:disabled{
+            border: 2px dashed red;
+            background: black;
+          }
+      }
 
-    input[type=text],textarea{
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-        color: @black;
+
+    }      
+    .modalSuccess, .modalWarn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        //z-index: 1; /* Sit on top */
+        padding-top:300px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        //background:@black;
       }
-      textarea{
-          height:200px;
-      }
-      
-      input[type=submit] {
-        background-color: @orange;
-        color: @white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      
-      input[type=submit]:hover {
-        background-color: #45a049;
-      }
+    #successModal{
+        /* Modal Content */
+        .modal-content {
+            background-color: green;
+            color:@black;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            font-size: large;
+        }
     }
+    #warnModal{
+        /* Modal Content */
+        .modal-content {
+            background-color: yellow;
+            color: @black;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            font-size: large;
+        }
+    }
+      .submitBtn{
+          background-color:@orange;
+          padding:12px 28px;
+          text-align:center;
+          margin:auto;
+          border-radius:8px;
+          position: relative;
+          left: 45%;
+      }

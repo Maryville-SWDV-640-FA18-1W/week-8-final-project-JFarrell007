@@ -31,6 +31,13 @@ h4 {
   font-style: italic;
   font-size: 48px;
 }
+.coolFontSmall {
+  font-family: 'Raleway', 'sans-serif';
+  text-align: center;
+  color: #FB9C02;
+  font-weight: normal;
+  font-size: 24px;
+}
 .navcontainer {
   padding-bottom: 100px;
 }
@@ -195,9 +202,30 @@ h4 {
   font-family: 'FontAwesome', 'sans-serif';
   content: "\f017";
 }
+.resGuests:before {
+  font-family: 'FontAwesome', 'sans-serif';
+  content: "\f0c0";
+}
 .inputLabel {
   font-size: 14px;
   font-weight: bold;
+}
+#myModal .modal-content .modal-header {
+  padding: 35px 50px;
+  background-color: #0C0E09;
+  color: #FB9C02;
+}
+#myModal .modal-content .modal-body {
+  padding: 40px 50px;
+  background-color: #0C0E09;
+  color: #FB9C02;
+}
+#myModal .modal-content .modal-body .btn {
+  background-color: #FB9C02;
+  color: #0C0E09;
+}
+#myModal .modal-content .modal-footer {
+  background-color: #0C0E09;
 }
 .menufood {
   min-height: 200px;
@@ -275,6 +303,9 @@ h4 {
 .contactform {
   /*padding-top:100px;*/
   min-height: 200px;
+  /*      input:invalid{
+          border: 2px dashed red;
+      }*/
 }
 .contactform textarea {
   height: 200px;
@@ -294,33 +325,64 @@ h4 {
 .contactform input[type=submit]:hover {
   background-color: red;
 }
-.contactform1 {
-  padding-top: 100px;
-  min-height: 200px;
+.contactform input:invalid {
+  border: 2px dashed red;
 }
-.contactform1 input[type=text],
-.contactform1 textarea {
+.contactform input:invalid .submitBtn:disabled {
+  border: 2px dashed red;
+  background: black;
+}
+.modalSuccess,
+.modalWarn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  padding-top: 300px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+#successModal {
+  /* Modal Content */
+}
+#successModal .modal-content {
+  background-color: green;
   color: #0C0E09;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: large;
 }
-.contactform1 textarea {
-  height: 200px;
+#warnModal {
+  /* Modal Content */
 }
-.contactform1 input[type=submit] {
+#warnModal .modal-content {
+  background-color: yellow;
+  color: #0C0E09;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: large;
+}
+.submitBtn {
   background-color: #FB9C02;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.contactform1 input[type=submit]:hover {
-  background-color: #45a049;
+  padding: 12px 28px;
+  text-align: center;
+  margin: auto;
+  border-radius: 8px;
+  position: relative;
+  left: 45%;
 }
