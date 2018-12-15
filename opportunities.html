@@ -49,14 +49,14 @@
           <li><a href="review.html">REVIEWS</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">CONTACT
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="opportunities.html">Opportunities</a></li>
-              </ul>
-          </li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">CONTACT
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="opportunities.html">Opportunities</a></li>
+                </ul>
+            </li>
         </ul>
       </div>
     </nav>
@@ -64,21 +64,35 @@
 
   <br><br><br><br>
   <div class="contactcontainer">
-      <div class="coolFont">Send us a Note</div>
+      <div class="coolFont">Dewey and Finn's Opportunities</div>
     <!--<form class="contactform" action="/action_page.php">-->
     <form class="contactform">
       <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" class="form-control" name="name" placeholder="Your name.." required aria-required="true">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" class="form-control" name="name" placeholder="Full Name" required aria-required="true">
       </div>
       <div class="form-group">
       <label for="email">Email</label>
       <input type="email" id="email" class="form-control" name="email" placeholder="Your Email.." required aria-required="true">
-      </div> 
-      <div class="form-group">
-      <label for="subject">Subject</label>
-      <textarea id="subject" class="form-control" name="subject" placeholder="Leave us a message.." required aria-required="true"></textarea>
       </div>
+      <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" class="form-control" name="phone" placeholder="Your Phone Number" required aria-required="true">
+       </div>
+       <div class="form-group">
+            <label for="job">What job are you applying for?</label>
+            <input type="text" id="job" class="form-control" name="job" placeholder="Title of Job" required aria-required="true">
+        </div>                
+        <div class="form-group">
+            <label for="education">Highest level of education?</label><br>
+            <input type="radio" name="edlevel" value="none" checked> None<br>
+            <input type="radio" name="edlevel" value="highschool"> High School<br>
+            <input type="radio" name="edlevel" value="college"> College<br>
+            <input type="text" id="numyears" class="form-control" name="numyears" placeholder="Years Completed" required aria-required="true">
+        </div>
+        <div class="form-group">
+            Attache Resume: <input type="file">
+        </div>
     </form>
   </div>
   <br>
@@ -99,7 +113,7 @@
   <script type="text/javascript" src="js/contact.js"></script>
 
 <div class="footer">
-    <a class="up-arrow" href="contact.html" data-toggle="tooltip" title="TO TOP">
+    <a class="up-arrow" href="opportunities.html" data-toggle="tooltip" title="TO TOP">
        <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
     <p>Dewey and Finn's dog gone good food</p> 

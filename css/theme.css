@@ -372,3 +372,8 @@ h4 {
   position: relative;
   left: 45%;
 }
+::-webkit-file-upload-button {
+  color: white;
+  border-radius: 8px;
+  background-color: #FB9C02;
+}
