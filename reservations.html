@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script type="text/javascript" src="js/reservations.js"></script>
   <script type="text/javascript" src="js/jquery-3.3.1-1.min.js"></script>
   <link rel="stylesheet" href="css/theme.css">
   <!-- food images from https://www.pexels.com/search/food/ -->
@@ -111,45 +110,41 @@
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
-        <div class="modal-dialog">   
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="coolFont">Confirm Reservation</div>
-                <div class="coolFont">Dewey and Finn's</div>
-                <div class="resDate coolFontSmall"></div>
-                <div class="resTime coolFontSmall"></div>
-                <div class="resGuests coolFontSmall"></div>
-                
-              </div>
-              <div class="modal-body">
-                <form role="form">
-                  <div class="form-group">
-                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Name</label>
-                    <input type="text" class="form-control" id="usrname" placeholder="Enter Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone"><span class="glyphicon glyphicon-phone"></span> Mobile</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Enter Mobile Number">
-                  </div>
-                  <div class="form-group">
-                      <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>
-                      <input type="text" class="form-control" id="email" placeholder="Enter Email">
-                  </div> 
-                    <button type="submit" class="btn btn-block"><span class="glyphicon glyphicon-ok"></span> Confirm Reservation</button>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-danger btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-              </div>
-            </div>
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="coolFont">Confirm Reservation</div>
+            <div class="coolFont">Dewey and Finn's</div>
+            <div class="resDate coolFontSmall"></div>
+            <div class="resTime coolFontSmall"></div>
+            <div class="resGuests coolFontSmall"></div>
             
           </div>
-        </div>    
-        
-      </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Name</label>
+                <input type="text" class="form-control" id="usrname" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label for="phone"><span class="glyphicon glyphicon-phone"></span> Mobile</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter Mobile Number">
+              </div>
+              <div class="form-group">
+                  <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+                  <input type="text" class="form-control" id="email" placeholder="Enter Email">
+              </div> 
+                <button type="submit" class="btn btn-block"><span class="glyphicon glyphicon-ok"></span> Confirm Reservation</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          </div>
+        </div>
+      </div>         
     </div>
-
+  <!--</div>-->
+  <script type="text/javascript" src="js/reservations.js"></script>
     <div class="footer">
         <a class="up-arrow" href="reservations.html" data-toggle="tooltip" title="TO TOP">
         <span class="glyphicon glyphicon-chevron-up"></span>

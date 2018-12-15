@@ -1,3 +1,4 @@
+/*partially transparent opacity*/
 body {
   background-color: #0C0E09;
   font-family: 'Raleway', 'sans-serif';
@@ -240,6 +241,7 @@ h4 {
 }
 .locationcontainer .locationmap {
   text-align: center;
+  padding-top: 20px;
 }
 .locationcontainer .locationmap .iframe {
   display: block;
@@ -287,12 +289,10 @@ h4 {
   padding-left: 20px;
 }
 .contactcontainer {
-  /* min-height: 200px;*/
-  /*padding-top:400px;*/
   border-radius: 5px;
   background-color: #0C0E09;
   padding: 20px;
-  /*width:80%;*/
+  padding-bottom: 20px;
   border: 2px solid #FB9C02;
   max-width: 500px;
   margin: auto;
@@ -301,11 +301,7 @@ h4 {
   font-size: large;
 }
 .contactform {
-  /*padding-top:100px;*/
   min-height: 200px;
-  /*      input:invalid{
-          border: 2px dashed red;
-      }*/
 }
 .contactform textarea {
   height: 200px;
@@ -348,15 +344,10 @@ h4 {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: #000000;
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
-#successModal {
-  /* Modal Content */
-}
-#successModal .modal-content {
+.modalSuccess .modal-content,
+.modalWarn .modal-content {
   background-color: green;
   color: #0C0E09;
   margin: auto;
@@ -365,17 +356,12 @@ h4 {
   width: 80%;
   font-size: large;
 }
-#warnModal {
-  /* Modal Content */
+.modalWarn {
+  /*extend modalSuccess*/
 }
-#warnModal .modal-content {
+.modalWarn .modal-content {
   background-color: yellow;
-  color: #0C0E09;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  font-size: large;
+  /*change background-color to warn*/
 }
 .submitBtn {
   background-color: #FB9C02;

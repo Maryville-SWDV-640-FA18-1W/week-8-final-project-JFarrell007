@@ -25,3 +25,19 @@ $(function(){
       
     });
   })
+
+//Put the current date into the date input field
+$(document).ready( function() {
+  var today = setMinDate();
+  //set default reservation date to today
+  $('#date-input').val(today);
+});
+//Method to set min date attribute to today's date
+//Returns todays date
+function setMinDate(){
+var today = new Date().toISOString().split('T')[0];
+console.log(today);
+console.log(document.getElementsByName("reservation-date")[0]);
+document.getElementsByName("reservation-date")[0].setAttribute('min', today);
+return today;
+}
