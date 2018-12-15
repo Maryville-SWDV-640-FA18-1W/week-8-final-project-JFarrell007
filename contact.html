@@ -16,7 +16,7 @@
 <body>    
   <!--<div class="container">-->   
   <div class="navcontainer">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
       <div class="top-bar">
           <p>555-555-1234 | 123 Food St Anytown GA | Open Daily at 11:00 am</p>
           <p>Happy Hour Mon-Fri 5pm - 6pm Half Price Drinks</p>
@@ -61,29 +61,28 @@
     <form class="contactform">
       <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" id="name" class="form-control" name="name" placeholder="Your name.." required>
+      <input type="text" id="name" class="form-control" name="name" placeholder="Your name.." required aria-required="true">
       </div>
       <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" id="email" class="form-control" name="email" placeholder="Your Email.." required>
-      </div>
-  
+      <input type="email" id="email" class="form-control" name="email" placeholder="Your Email.." required aria-required="true">
+      </div> 
       <div class="form-group">
       <label for="subject">Subject</label>
-      <textarea id="subject" class="form-control" name="subject" placeholder="Leave us a message.." required></textarea>
+      <textarea id="subject" class="form-control" name="subject" placeholder="Leave us a message.." required aria-required="true"></textarea>
       </div>
     </form>
   </div>
   <br>
-  <button class="submitBtn" id="submitBtn">Submit</button>
+  <button role="button" class="submitBtn" id="submitBtn">Submit</button>
 
-  <div id="successModal" class="modalSuccess">
+  <div role="alert" id="successModal" class="modalSuccess">
       <div class="modal-content">
         <span class="close">&times;</span>
         <p>Thank you for your input</p>
   </div>
   </div>
-  <div id="warnModal" class="modalWarn">
+  <div role="alert" id="warnModal" class="modalWarn">
       <div class="modal-content">
         <span class="close">&times;</span>
         <p>Please enter all information</p>
